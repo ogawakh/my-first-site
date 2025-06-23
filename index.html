@@ -3,13 +3,87 @@
 <head>
   <title>はじめてのページ</title>
   <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #a1c4fd 100%);
+      font-family: 'Segoe UI', 'Hiragino Sans', Arial, sans-serif;
+      color: #333;
+    }
+    nav {
+      background: linear-gradient(90deg, #ff6a00 0%, #ffd800 100%);
+      padding: 16px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(255, 106, 0, 0.2);
+    }
+    nav a {
+      color: #fff;
+      background: #ff6a00;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 18px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      transition: background 0.3s, color 0.3s;
+      box-shadow: 0 2px 8px rgba(255, 216, 0, 0.2);
+    }
+    nav a:hover {
+      background: #ffd800;
+      color: #ff6a00;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 2.8em;
+      color: #ff6a00;
+      text-shadow: 2px 2px 8px #ffd800, 0 0 10px #a1c4fd;
+    }
+    p {
+      text-align: center;
+      font-size: 1.3em;
+      color: #3a86ff;
+      background: rgba(255,255,255,0.7);
+      display: inline-block;
+      margin: 30px auto 0 auto;
+      padding: 16px 32px;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(58,134,255,0.15);
+    }
+    .rainbow-bar {
+      height: 8px;
+      background: linear-gradient(90deg, #ff6a00, #ffd800, #3a86ff, #ff61a6, #00ffb8, #ff6a00);
+      margin: 32px 0 0 0;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(255, 106, 0, 0.2);
+    }
+    footer {
+      background: linear-gradient(90deg, #3a86ff 0%, #ff61a6 100%);
+      color: #fff;
+      text-align: center;
+      padding: 14px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      box-shadow: 0 -2px 8px rgba(58,134,255,0.2);
+    }
+  </style>
 </head>
 <body>
-  <nav style="background-color: #ddd; padding: 10px;">
-    <a href="index.html">ホーム</a> |
+  <nav>
+    <a href="index.html">ホーム</a>
     <a href="about.html">自己紹介</a>
   </nav>
   <h1>こんにちは！</h1>
-  <p>これは自分で作ったWebページです。</p>
+  <div style="text-align:center;">
+    <p>これは自分で作ったWebページです。</p>
+  </div>
+  <div class="rainbow-bar"></div>
+  <footer>
+    カラフルなページへようこそ！
+  </footer>
 </body>
 </html>
